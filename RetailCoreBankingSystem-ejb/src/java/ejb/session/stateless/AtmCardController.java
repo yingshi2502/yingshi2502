@@ -24,7 +24,7 @@ import util.exception.GeneralException;
 import util.exception.InvalidLoginCredentialException;
 
 
-
+/*comment*/
 @Stateless
 @Local(AtmCardControllerLocal.class)
 @Remote(AtmCardControllerRemote.class)
