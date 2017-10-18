@@ -26,6 +26,7 @@ import util.exception.InvalidLoginCredentialException;
 
 /*comment*/
 //Thanks
+
 @Stateless
 @Local(AtmCardControllerLocal.class)
 @Remote(AtmCardControllerRemote.class)
@@ -258,6 +259,10 @@ public class AtmCardController implements AtmCardControllerLocal, AtmCardControl
         }catch(AtmCardNotFoundException ex){
             throw new InvalidLoginCredentialException("Card Number does not exist or invalid PIN");
         }
+    }
+    
+    public void hehe(){
+        System.out.println("***HEHE***");
     }
     
 }
